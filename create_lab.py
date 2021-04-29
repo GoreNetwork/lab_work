@@ -1,6 +1,6 @@
 from git import Repo
 
-repo_url = 'git@github.com:gore-labs/lab_to_automate.git'
+# repo_url = 'git@github.com:gore-labs/lab_to_automate.git'
 repo_path = '/home/dhimes/lab_to_automate/'
 
 
