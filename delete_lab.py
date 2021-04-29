@@ -21,7 +21,9 @@ for branch in branch_attribute:
     rm_prefix_origin .remove('origin')
     branch_name = '/'.join(rm_prefix_origin)
     pprint(branch_name)
-    branch_name = ":" + branch_name
     if "student" not in branch_name:
         continue
+    repo.delete_head(branch_name)
+    branch_name = ":" + branch_name
+
     remote.push(refspec=branch_name)
